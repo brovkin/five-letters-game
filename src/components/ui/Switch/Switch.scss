@@ -1,0 +1,54 @@
+@import './src/assets/styles/imports';
+
+.switch {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-weight: 400;
+  }
+
+  &__input {
+    height: 20px;
+    border-radius: 15px;
+    isolation: isolate;
+    width: 35px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: border-color .6s cubic-bezier(0.85, 0.05, 0.18, 1.55);
+  }
+
+  &__indicator {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin: 2px;
+    background-color: #ccc;
+    border-radius: 15px;
+    transform: translate3d(0, 0, 0);
+    transition: .6s cubic-bezier(0.85, 0.05, 0.18, 1.55);
+    transition-property: transform, background-color;
+  }
+
+  &__real-checkbox {
+    display: none;
+
+    &:checked {
+      & ~ .switch__input {
+          border-color: $secondary-color;
+        & .switch__indicator {
+          transform: translate3d(14px, 0, 0);
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+}

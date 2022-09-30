@@ -1,0 +1,91 @@
+@import './src/assets/styles/imports';
+
+.ui-button {
+  background-color: $main-btn-bg-color;
+  border: 1px solid $main-btn-border-color;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+  position: relative;
+  opacity: 1;
+  transition: .3s opacity;
+  outline: none;
+  font-size: 14px;
+  color: $main-btn-color;
+  font-weight: 400;
+
+  @media (max-width: $media-SM) {
+    padding: 7px 15px;
+    opacity: 1;
+  }
+
+  &.sm {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  &.outline {
+    background-color: transparent;
+    transition-property: background-color;
+
+    &:hover {
+      background-color: $error-bg;
+    }
+  }
+
+  &.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+    transition: all .3s ease;
+    &:hover {
+      box-shadow: 0 5px 10px 1px rgba(0, 0, 0, .2);
+    }
+  }
+
+  &__tooltip {
+    position: absolute;
+    font-size: 10px;
+    background: #000;
+    border-radius: 3px;
+    color: #fff;
+    padding: 5px;
+    min-width: 150px;
+    z-index: 100;
+    opacity: 0;
+    right: 40px;
+    transition: all .3s ease;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.cancel {
+    background-color: #fff;
+    border: 1px solid $main-color;
+    border-radius: 3px;
+    transition: all .3s ease;
+    &:hover {
+      background-color: $main-color;
+    }
+  }
+
+  &.disabled {
+    pointer-events: none;
+    opacity: .3;
+  }
+}
+
+.tooltip-animation {
+  &-enter {
+    &-done {
+      right: 60px;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import './src/assets/styles/imports';
+
+.form-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  @media (max-width: $media-SM) {
+
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    font-weight: 400;
+    flex: 2;
+
+    @media (max-width: $media-SM) {
+      margin-right: 20px;
+      font-size: $sm-font-size;
+    }
+  }
+
+  &__value {
+    &-wrapper {
+      flex: 3;
+    }
+
+    &-input {
+      width: 100%;
+      outline: none;
+      border: 1px solid #ccc;
+      padding: 5px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+  }
+
+  &__required {
+    color: $error-color;
+  }
+}

@@ -1,0 +1,54 @@
+$root: '#root';
+$font-family: 'Lato Regular', sans-serif;
+
+// colors
+
+$main-color: #ffdd2d;
+$main-bg-color: #101010;
+$main-border: #000;
+
+$right-letter-bg-color: $main-color;
+$right-letter-color: #190f01;
+$letter-color: #4c4c4c;
+$wrong-letter-color: $letter-color;
+$disabled-letter-bg-color: $main-bg-color;
+
+// other
+
+$other-order-letter-bg: #fff;
+$other-order-letter: #190f01;
+
+// miss
+
+$miss-letter-bg: #4c4c4c;
+$miss-letter: #190f01;
+
+// btn
+
+$main-btn-color: $right-letter-color;
+$main-btn-bg-color: $main-color;
+$main-btn-border-color: $main-color;
+
+
+$danger: #BB2124;
+$warning: #F0AD4E;
+$success: #22BB33;
+
+$error-bg: #f8d7da;
+$error-color: #f48668;
+$success-bg: #d4edda;
+$success-color: #155724;
+$success-border: #c3e6cb;
+
+// errors message
+
+$message-error-bg: $error-bg;
+$message-error-color: #721c24;
+
+// media queries
+
+$media-XS: 480px;
+$media-SM: 576px;
+$media-MD: 768px;
+$media-LG: 992px;
+$media-XL: 1200px;

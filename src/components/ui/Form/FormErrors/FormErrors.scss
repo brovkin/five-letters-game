@@ -1,0 +1,10 @@
+@import './src/assets/styles/imports';
+
+.form-errors {
+  color: $error-color;
+
+  &__error {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}

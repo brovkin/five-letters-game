@@ -1,0 +1,47 @@
+@import './src/assets/styles/imports';
+
+.filled-letters {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  padding: 10px;
+  max-width: 210px;
+  &__alphabet {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+  }
+
+  &__letter {
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    background-color: $miss-letter-bg;
+    padding: 3px 6px;
+    font-size: 14px;
+    margin-right: 8px;
+    border-radius: 4px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+
+    &.miss {
+      color: $miss-letter;
+      opacity: 0.3;
+    }
+
+    &.other {
+      color: $other-order-letter;
+      background-color: $other-order-letter-bg;
+    }
+
+    &.right {
+      color: $right-letter-color;
+      background-color: $right-letter-bg-color;
+    }
+
+    &:nth-child(5n){
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import './src/assets/styles/imports';
+
+.icon {
+  & svg {
+    width: 20px;
+    height: 20px;
+
+    @media (max-width: $media-SM) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__tooltip {
+    font-size: 10px;
+    position: absolute;
+    left: 30px;
+    background: $error-bg;
+    color: #000;
+    padding: 10px;
+    border-radius: 3px;
+    display: block;
+    min-width: 150px;
+    max-width: 300px;
+    opacity: 0.8;
+    cursor: default;
+ }
+}

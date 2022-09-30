@@ -1,0 +1,28 @@
+@import './src/assets/styles/imports';
+
+.app {
+  background-color: $main-bg-color;
+  padding: 10px 15px;
+  font-family: "Open Sans","Segoe UI","-apple-system","Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  height: 100%;
+
+  &__wrapper {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &__hidden-word {
+    color: $main-color;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  &__test {
+    color: #fff;
+    & > li {
+      width: 100px;
+    }
+  }
+}

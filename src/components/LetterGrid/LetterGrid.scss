@@ -1,0 +1,38 @@
+@import './src/assets/styles/imports';
+
+.grid {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  &__buttons {
+    margin: 20px 0;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__message {
+    visibility: hidden;
+
+    &.visible {
+      visibility: visible;
+    }
+
+    &-success {
+      color: $main-color;
+    }
+
+    &-error {
+      color: $error-color;
+    }
+
+    &-wrapper {
+      margin: 10px 0;
+    }
+  }
+}

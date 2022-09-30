@@ -1,0 +1,27 @@
+@import './src/assets/styles/imports';
+
+.logo {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  &__letter {
+    cursor: default;
+    background-color: $main-color;
+    color: $right-letter-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 46px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+    padding: 5px 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

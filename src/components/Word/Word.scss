@@ -1,0 +1,14 @@
+.word {
+  display: flex;
+  flex-flow: row wrap;
+
+  &.accepted {
+    pointer-events: none;
+  }
+
+  &:last-child {
+    & .letter {
+      margin-bottom: 0;
+    }
+  }
+}
