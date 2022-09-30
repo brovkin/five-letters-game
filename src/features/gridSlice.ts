@@ -117,6 +117,7 @@ export const gridSlice = createSlice({
       state.words = [];
       state.start = true;
       state.isWin = false;
+      state.filledLetters = [];
       state.searchWord = filteredSearchWord(state.winnerWords);
     },
     restart: (state) => {
@@ -128,6 +129,7 @@ export const gridSlice = createSlice({
       state.isWin = false;
       state.isFailed = false;
       state.filledLetters = [];
+      state.searchWord = filteredSearchWord(state.winnerWords);
     },
   },
 });
