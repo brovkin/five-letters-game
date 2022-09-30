@@ -15,6 +15,7 @@ export type LetterOrder = {
 
 export type LetterOtherOrder = Omit<LetterOrder, 'isRight'>;
 export type LetterRightOrder = Omit<LetterOrder, 'isOtherOrder'>;
+export type MarkedLetter = Omit<LetterOrder, 'number'>;
 
 type FilledWord = {
   word: string;
@@ -36,7 +37,7 @@ interface State {
   isWin: boolean;
   isFailed: boolean;
   wordsCounter: number;
-  filledLetters: any;
+  filledLetters: MarkedLetter[];
 }
 
 const filteredSearchWord = (winnerWords: WinnerWordsType): string => {
