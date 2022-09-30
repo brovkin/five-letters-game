@@ -18,7 +18,7 @@
   "repository": "https://github.com/brovkin/five-letters-game",
   "scripts": {
     "start": "craco start",
-    "build": "react-scripts build",
+    "build": "craco build",
     "test": "jest --coverage",
     "eject": "react-scripts eject"
   },
