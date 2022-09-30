@@ -3,7 +3,7 @@
 .filled-letters {
   position: absolute;
   right: 20px;
-  top: 50px;
+  top: 30px;
   padding: 10px;
   max-width: 210px;
   &__alphabet {
@@ -13,6 +13,7 @@
   }
 
   &__letter {
+    cursor: default;
     color: #fff;
     width: 25px;
     height: 25px;
